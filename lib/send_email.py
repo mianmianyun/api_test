@@ -1,7 +1,7 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from api_test.config.config import *
+from config.config import *
 
 def send_mail():
     msg=MIMEText('eee','plain','utf-8')

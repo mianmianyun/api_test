@@ -342,3 +342,60 @@
 [2019-09-16 18:02:14] INFO [case_log: case_log.py, 14] 实际状态码：200
 [2019-09-16 18:02:14] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
 [2019-09-16 18:02:15] INFO [send_mail: send_email.py, 34] 邮件发送完成
+[2019-09-16 20:45:11] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 20:45:11] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 20:45:11] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 20:45:11] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 20:45:11] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 20:45:11] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "123456"}
+[2019-09-16 20:45:11] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 20:45:11] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 20:45:11] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcyNDMxMX0.RQPD9Y_YCTPhN6FI8apX55yAAudMbP3_UlZyugaGI90"}}
+[2019-09-16 20:45:11] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 20:45:12] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 20:45:12] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_password_wrong
+[2019-09-16 20:45:12] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 20:45:12] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 20:45:12] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "12345678"}
+[2019-09-16 20:45:12] INFO [case_log: case_log.py, 13] 期望结果：{'code': 1, 'message': '密码错误'}
+[2019-09-16 20:45:12] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 20:45:12] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 20:45:13] INFO [send_mail: send_email.py, 34] 邮件发送完成
+[2019-09-16 21:04:59] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 21:05:01] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 21:05:01] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 21:05:01] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 21:05:01] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 21:05:01] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "123456"}
+[2019-09-16 21:05:01] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 21:05:01] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 21:05:01] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcyNTUwMH0.TyfqhJ8CKK6vn9dPPWS83SZRdC40GmaXfSj591D3slM"}}
+[2019-09-16 21:05:01] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 21:05:01] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 21:05:01] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_password_wrong
+[2019-09-16 21:05:01] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 21:05:01] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 21:05:01] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "12345678"}
+[2019-09-16 21:05:01] INFO [case_log: case_log.py, 13] 期望结果：{'message': '密码错误', 'code': 1}
+[2019-09-16 21:05:01] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 21:05:01] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 21:05:02] INFO [send_mail: send_email.py, 34] 邮件发送完成
+[2019-09-16 21:07:08] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 21:07:08] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 21:07:08] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 21:07:08] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 21:07:08] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 21:07:08] INFO [case_log: case_log.py, 12] 请求数据：{"password": "123456", "userName": "xuyongjie"}
+[2019-09-16 21:07:08] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 21:07:08] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 21:07:08] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcyNTYyN30.cHp_ehJi-g2VGuic3tYQ95WOfxLfWHtZLyZQ3hjapx0"}}
+[2019-09-16 21:07:08] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 21:07:08] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 21:07:08] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_password_wrong
+[2019-09-16 21:07:08] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 21:07:08] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 21:07:08] INFO [case_log: case_log.py, 12] 请求数据：{"password": "12345678", "userName": "xuyongjie"}
+[2019-09-16 21:07:08] INFO [case_log: case_log.py, 13] 期望结果：{'message': '密码错误', 'code': 1}
+[2019-09-16 21:07:08] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 21:07:08] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 21:07:09] INFO [send_mail: send_email.py, 34] 邮件发送完成

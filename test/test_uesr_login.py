@@ -1,9 +1,9 @@
 import unittest
 import requests
-from api_test.lib.case_log import  *
-from api_test.lib.read_excel import *
-from api_test.config.config import *
 import os
+from lib.case_log import  *
+from lib.read_excel import *
+from config.config import *
 
 class TestUserLogin(unittest.TestCase):
 

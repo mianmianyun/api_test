@@ -1,4 +1,4 @@
-from api_test.config.config import *
+from config.config import *
 import json
 
 def case_log(case_name,url,header,data,except_resp,resp_cade,resp_text):
