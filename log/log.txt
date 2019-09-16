@@ -1,0 +1,344 @@
+[2019-09-16 13:20:19] INFO [<module>: config.py, 9] hello
+[2019-09-16 13:37:38] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 13:37:38] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 13:37:38] INFO [test_user_login_normal: test_uesr_login.py, 26] 测试用例：test_user_login_normal
+[2019-09-16 13:37:38] INFO [test_user_login_normal: test_uesr_login.py, 27] url：http://hm.xuyon.com/user/login
+[2019-09-16 13:37:38] INFO [test_user_login_normal: test_uesr_login.py, 28] headers：{'Content-Type': 'application/json'}
+[2019-09-16 13:37:38] INFO [test_user_login_normal: test_uesr_login.py, 29] 请求数据：{'userName': 'xuyongjie', 'password': '123456'}
+[2019-09-16 13:37:38] INFO [test_user_login_normal: test_uesr_login.py, 30] 期望结果：success
+[2019-09-16 13:37:38] INFO [test_user_login_normal: test_uesr_login.py, 31] 实际状态码：200
+[2019-09-16 13:37:38] INFO [test_user_login_normal: test_uesr_login.py, 32] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODY5ODY1OH0.1_l6hmSRBG-Hgrb4Z3dBh0bYxJSuuWZzBWZTzahao3o"}}
+[2019-09-16 13:37:38] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 13:37:38] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 13:37:38] INFO [test_user_login_password_wrong: test_uesr_login.py, 46] 测试用例：test_user_login_normal
+[2019-09-16 13:37:38] INFO [test_user_login_password_wrong: test_uesr_login.py, 47] url：http://hm.xuyon.com/user/login
+[2019-09-16 13:37:38] INFO [test_user_login_password_wrong: test_uesr_login.py, 48] headers：{'Content-Type': 'application/json'}
+[2019-09-16 13:37:38] INFO [test_user_login_password_wrong: test_uesr_login.py, 49] 请求数据：{'userName': 'xuyongjie', 'password': '12345678'}
+[2019-09-16 13:37:38] INFO [test_user_login_password_wrong: test_uesr_login.py, 50] 期望结果：{'code': 1, 'message': '密码错误'}
+[2019-09-16 13:37:38] INFO [test_user_login_password_wrong: test_uesr_login.py, 51] 实际状态码：200
+[2019-09-16 13:37:38] INFO [test_user_login_password_wrong: test_uesr_login.py, 52] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 14:04:25] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 14:04:25] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 14:04:25] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 14:04:25] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 14:04:25] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 14:04:25] INFO [case_log: case_log.py, 12] 请求数据：{"password": "123456", "userName": "xuyongjie"}
+[2019-09-16 14:04:25] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 14:04:25] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 14:04:25] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcwMDI2NH0.hTXiNCw7nkq-caCT3W6G81zWC8OTMQgPEZjT9sjVTMQ"}}
+[2019-09-16 14:04:25] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 14:04:25] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 14:04:25] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_password_wrong
+[2019-09-16 14:04:25] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 14:04:25] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 14:04:25] INFO [case_log: case_log.py, 12] 请求数据：{"password": "12345678", "userName": "xuyongjie"}
+[2019-09-16 14:04:25] INFO [case_log: case_log.py, 13] 期望结果：{'message': '密码错误', 'code': 1}
+[2019-09-16 14:04:25] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 14:04:25] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 16:14:07] INFO [send_mail: send_email.py, 40] 邮件发送完成
+[2019-09-16 16:19:48] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 16:19:49] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 16:19:49] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 16:19:49] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 16:19:49] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 16:19:49] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "123456"}
+[2019-09-16 16:19:49] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 16:19:49] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 16:19:49] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcwODM4OH0.WIHHo1eeif20qGrMztEe9jN0A3CmQqI2tgJOe7xoXhA"}}
+[2019-09-16 16:19:49] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 16:19:49] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 16:19:49] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_password_wrong
+[2019-09-16 16:19:49] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 16:19:49] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 16:19:49] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "12345678"}
+[2019-09-16 16:19:49] INFO [case_log: case_log.py, 13] 期望结果：{'message': '密码错误', 'code': 1}
+[2019-09-16 16:19:49] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 16:19:49] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 16:19:51] INFO [send_mail: send_email.py, 40] 邮件发送完成
+[2019-09-16 16:30:27] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 16:30:27] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 16:30:27] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 16:30:27] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 16:30:27] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 16:30:27] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "123456"}
+[2019-09-16 16:30:27] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 16:30:27] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 16:30:27] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcwOTAyN30.NgE89LmWitvjbLU7aN-ohfBTHNPR3aJxBgUSfzFlQ4E"}}
+[2019-09-16 16:30:27] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 16:30:27] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 16:30:27] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_password_wrong
+[2019-09-16 16:30:27] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 16:30:27] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 16:30:27] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "12345678"}
+[2019-09-16 16:30:27] INFO [case_log: case_log.py, 13] 期望结果：{'code': 1, 'message': '密码错误'}
+[2019-09-16 16:30:27] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 16:30:27] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 16:33:17] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 16:33:17] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 16:33:17] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 16:33:17] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 16:33:17] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 16:33:17] INFO [case_log: case_log.py, 12] 请求数据：{"password": "123456", "userName": "xuyongjie"}
+[2019-09-16 16:33:17] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 16:33:17] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 16:33:17] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcwOTE5N30.HX_nZP75yZYJ90BXDya5HzuQ-ZmKqcZVCdsRm46wbzg"}}
+[2019-09-16 16:33:17] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 16:33:18] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 16:33:18] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_password_wrong
+[2019-09-16 16:33:18] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 16:33:18] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 16:33:18] INFO [case_log: case_log.py, 12] 请求数据：{"password": "12345678", "userName": "xuyongjie"}
+[2019-09-16 16:33:18] INFO [case_log: case_log.py, 13] 期望结果：{'code': 1, 'message': '密码错误'}
+[2019-09-16 16:33:18] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 16:33:18] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 16:37:29] INFO [send_mail: send_email.py, 40] 邮件发送完成
+[2019-09-16 16:39:10] INFO [send_mail: send_email.py, 40] 邮件发送完成
+[2019-09-16 16:45:26] INFO [send_mail: send_email.py, 38] 邮件发送完成
+[2019-09-16 16:50:21] INFO [send_mail: send_email.py, 38] 邮件发送完成
+[2019-09-16 16:52:06] INFO [send_mail: send_email.py, 38] 邮件发送完成
+[2019-09-16 16:53:31] INFO [send_mail: send_email.py, 38] 邮件发送完成
+[2019-09-16 16:58:41] INFO [send_mail: send_email.py, 40] 邮件发送完成
+[2019-09-16 17:01:21] INFO [send_mail: send_email.py, 40] 邮件发送完成
+[2019-09-16 17:02:45] INFO [send_mail: send_email.py, 40] 邮件发送完成
+[2019-09-16 17:03:28] INFO [send_mail: send_email.py, 40] 邮件发送完成
+[2019-09-16 17:04:32] INFO [send_mail: send_email.py, 40] 邮件发送完成
+[2019-09-16 17:07:36] INFO [send_mail: send_email.py, 51] 邮件发送完成
+[2019-09-16 17:13:52] INFO [send_mail: send_email.py, 39] 邮件发送完成
+[2019-09-16 17:14:59] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:14:59] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:14:59] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 17:14:59] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:14:59] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:14:59] INFO [case_log: case_log.py, 12] 请求数据：{"password": "123456", "userName": "xuyongjie"}
+[2019-09-16 17:14:59] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 17:14:59] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:14:59] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcxMTY5OH0.j9gwPDUPlIzo9n6n-U_8kPg8rs_TAuh_eyn-8lMjCVY"}}
+[2019-09-16 17:14:59] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:14:59] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:14:59] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_password_wrong
+[2019-09-16 17:14:59] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:14:59] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:14:59] INFO [case_log: case_log.py, 12] 请求数据：{"password": "12345678", "userName": "xuyongjie"}
+[2019-09-16 17:14:59] INFO [case_log: case_log.py, 13] 期望结果：{'code': 1, 'message': '密码错误'}
+[2019-09-16 17:14:59] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:14:59] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 17:15:00] INFO [send_mail: send_email.py, 39] 邮件发送完成
+[2019-09-16 17:16:36] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:16:36] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:16:36] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 17:16:36] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:16:36] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:16:36] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "123456"}
+[2019-09-16 17:16:36] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 17:16:36] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:16:36] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcxMTc5NX0.rGWseC_HQglEgil8uGxpm61lC5kjQC_-atC0_-e7noo"}}
+[2019-09-16 17:16:36] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:16:36] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:16:36] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_password_wrong
+[2019-09-16 17:16:36] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:16:36] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:16:36] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "12345678"}
+[2019-09-16 17:16:36] INFO [case_log: case_log.py, 13] 期望结果：{'code': 1, 'message': '密码错误'}
+[2019-09-16 17:16:36] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:16:36] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 17:16:37] INFO [send_mail: send_email.py, 39] 邮件发送完成
+[2019-09-16 17:17:04] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:17:04] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:17:04] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 17:17:04] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:17:04] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:17:04] INFO [case_log: case_log.py, 12] 请求数据：{"password": "123456", "userName": "xuyongjie"}
+[2019-09-16 17:17:04] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 17:17:04] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:17:04] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcxMTgyM30.m4VsAsfuC9lHwx1fMwClfRVsqcwAau2mi8rMvHn6ycg"}}
+[2019-09-16 17:17:04] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:17:04] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:17:04] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_password_wrong
+[2019-09-16 17:17:04] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:17:04] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:17:04] INFO [case_log: case_log.py, 12] 请求数据：{"password": "12345678", "userName": "xuyongjie"}
+[2019-09-16 17:17:04] INFO [case_log: case_log.py, 13] 期望结果：{'message': '密码错误', 'code': 1}
+[2019-09-16 17:17:04] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:17:04] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 17:17:05] INFO [send_mail: send_email.py, 39] 邮件发送完成
+[2019-09-16 17:17:38] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:17:38] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:17:38] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 17:17:38] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:17:38] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:17:38] INFO [case_log: case_log.py, 12] 请求数据：{"password": "123456", "userName": "xuyongjie"}
+[2019-09-16 17:17:38] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 17:17:38] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:17:38] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcxMTg1N30.6OJQz5AKhxdT0Jor-XHN3_8-fBtN8X0LKPNkDEjlJC8"}}
+[2019-09-16 17:17:38] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:17:38] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:17:38] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_password_wrong
+[2019-09-16 17:17:38] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:17:38] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:17:38] INFO [case_log: case_log.py, 12] 请求数据：{"password": "12345678", "userName": "xuyongjie"}
+[2019-09-16 17:17:38] INFO [case_log: case_log.py, 13] 期望结果：{'message': '密码错误', 'code': 1}
+[2019-09-16 17:17:38] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:17:38] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 17:17:39] INFO [send_mail: send_email.py, 39] 邮件发送完成
+[2019-09-16 17:19:06] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:19:06] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:19:06] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 17:19:06] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:19:06] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:19:06] INFO [case_log: case_log.py, 12] 请求数据：{"password": "123456", "userName": "xuyongjie"}
+[2019-09-16 17:19:06] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 17:19:06] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:19:06] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcxMTk0NX0.Lw_JjgsOJI5bbfTLO_tpxHyUgFEfM4yJgUaFfyWkN5Y"}}
+[2019-09-16 17:19:06] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:19:06] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:19:06] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_password_wrong
+[2019-09-16 17:19:06] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:19:06] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:19:06] INFO [case_log: case_log.py, 12] 请求数据：{"password": "12345678", "userName": "xuyongjie"}
+[2019-09-16 17:19:06] INFO [case_log: case_log.py, 13] 期望结果：{'code': 1, 'message': '密码错误'}
+[2019-09-16 17:19:06] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:19:06] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 17:19:07] INFO [send_mail: send_email.py, 39] 邮件发送完成
+[2019-09-16 17:19:33] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:19:33] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:19:33] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 17:19:33] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:19:33] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:19:33] INFO [case_log: case_log.py, 12] 请求数据：{"password": "123456", "userName": "xuyongjie"}
+[2019-09-16 17:19:33] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 17:19:33] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:19:33] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcxMTk3Mn0.rG5sSUzPWL8tqmVrTOqK434SPSO0YFwwq4cCo4hhayo"}}
+[2019-09-16 17:19:33] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:19:33] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:19:33] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_password_wrong
+[2019-09-16 17:19:33] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:19:33] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:19:33] INFO [case_log: case_log.py, 12] 请求数据：{"password": "12345678", "userName": "xuyongjie"}
+[2019-09-16 17:19:33] INFO [case_log: case_log.py, 13] 期望结果：{'message': '密码错误', 'code': 1}
+[2019-09-16 17:19:33] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:19:33] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 17:19:34] INFO [send_mail: send_email.py, 39] 邮件发送完成
+[2019-09-16 17:19:52] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:19:52] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:19:52] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 17:19:52] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:19:52] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:19:52] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "123456"}
+[2019-09-16 17:19:52] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 17:19:52] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:19:52] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcxMTk5MX0.w4LB4gcBT6ujaa7mBTr5ZWn20KlCxKbFwUsdQ1k7HFA"}}
+[2019-09-16 17:19:52] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:19:52] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:19:52] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_password_wrong
+[2019-09-16 17:19:52] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:19:52] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:19:52] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "12345678"}
+[2019-09-16 17:19:52] INFO [case_log: case_log.py, 13] 期望结果：{'message': '密码错误', 'code': 1}
+[2019-09-16 17:19:52] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:19:52] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 17:19:53] INFO [send_mail: send_email.py, 39] 邮件发送完成
+[2019-09-16 17:20:16] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:20:16] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:20:16] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 17:20:16] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:20:16] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:20:16] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "123456"}
+[2019-09-16 17:20:16] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 17:20:16] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:20:16] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcxMjAxNX0.Lwku-DcXuIwKEtxa3JDutDCZwbCZqItjS8OCR35M3kM"}}
+[2019-09-16 17:20:16] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:20:16] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:20:16] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_password_wrong
+[2019-09-16 17:20:16] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:20:16] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:20:16] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "12345678"}
+[2019-09-16 17:20:16] INFO [case_log: case_log.py, 13] 期望结果：{'code': 1, 'message': '密码错误'}
+[2019-09-16 17:20:16] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:20:16] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 17:20:17] INFO [send_mail: send_email.py, 39] 邮件发送完成
+[2019-09-16 17:24:09] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:24:09] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:24:09] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 17:24:09] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:24:09] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:24:09] INFO [case_log: case_log.py, 12] 请求数据：{"password": "123456", "userName": "xuyongjie"}
+[2019-09-16 17:24:09] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 17:24:09] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:24:09] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcxMjI0OH0.S5HmA3hCTDsQF57fqotRixuBSVmF6XVnV2nw640S8u0"}}
+[2019-09-16 17:24:09] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:24:09] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:24:09] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_password_wrong
+[2019-09-16 17:24:09] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:24:09] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:24:09] INFO [case_log: case_log.py, 12] 请求数据：{"password": "12345678", "userName": "xuyongjie"}
+[2019-09-16 17:24:09] INFO [case_log: case_log.py, 13] 期望结果：{'code': 1, 'message': '密码错误'}
+[2019-09-16 17:24:09] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:24:09] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 17:24:10] INFO [send_mail: send_email.py, 34] 邮件发送完成
+[2019-09-16 17:26:00] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:26:00] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:26:00] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 17:26:00] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:26:00] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:26:00] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "123456"}
+[2019-09-16 17:26:00] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 17:26:00] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:26:00] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcxMjM1OX0.nAhTVsXO9fddASEkXt9BDreCy18glyTOEAGHSKTH3jg"}}
+[2019-09-16 17:26:00] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:26:00] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:26:00] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_password_wrong
+[2019-09-16 17:26:00] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:26:00] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:26:00] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "12345678"}
+[2019-09-16 17:26:00] INFO [case_log: case_log.py, 13] 期望结果：{'code': 1, 'message': '密码错误'}
+[2019-09-16 17:26:00] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:26:00] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 17:26:01] INFO [send_mail: send_email.py, 34] 邮件发送完成
+[2019-09-16 17:36:25] INFO [<module>: config.py, 29] hello
+[2019-09-16 17:55:35] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:55:35] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:55:35] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 17:55:35] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:55:35] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:55:35] INFO [case_log: case_log.py, 12] 请求数据：{"password": "123456", "userName": "xuyongjie"}
+[2019-09-16 17:55:35] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 17:55:35] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:55:35] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcxNDEzNH0.6KcvI6VsEIUNpzXLPHPpXShqY0w9EXdeh9IJ5c0b-Ig"}}
+[2019-09-16 17:55:51] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:55:51] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:55:51] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 17:55:51] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:55:51] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:55:51] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "123456"}
+[2019-09-16 17:55:51] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 17:55:51] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:55:51] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcxNDE1MH0.oWVPUx32bTNURs3MplIKmwNLdzun667wzFO5DHRaSPY"}}
+[2019-09-16 17:55:51] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 17:55:51] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 17:55:51] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_password_wrong
+[2019-09-16 17:55:51] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 17:55:51] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 17:55:51] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "12345678"}
+[2019-09-16 17:55:51] INFO [case_log: case_log.py, 13] 期望结果：{'message': '密码错误', 'code': 1}
+[2019-09-16 17:55:51] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 17:55:51] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 17:55:52] INFO [send_mail: send_email.py, 34] 邮件发送完成
+[2019-09-16 18:02:13] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 18:02:14] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 18:02:14] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_normal
+[2019-09-16 18:02:14] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 18:02:14] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 18:02:14] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "123456"}
+[2019-09-16 18:02:14] INFO [case_log: case_log.py, 13] 期望结果：success
+[2019-09-16 18:02:14] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 18:02:14] INFO [case_log: case_log.py, 15] 实际结果：{"code":0,"message":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDkxNDAwMjM1MjAwMDAiLCJpc3MiOiJoYXBwaW5lc3NtYWtlciIsImV4cCI6MTU2ODcxNDUzM30.Ito6Lpy6tJYDVRjxNhEqFhPIa7etC7yt2ngDuAB9noA"}}
+[2019-09-16 18:02:14] DEBUG [_new_conn: connectionpool.py, 205] Starting new HTTP connection (1): hm.xuyon.com:80
+[2019-09-16 18:02:14] DEBUG [_make_request: connectionpool.py, 393] http://hm.xuyon.com:80 "POST /user/login HTTP/1.1" 200 None
+[2019-09-16 18:02:14] INFO [case_log: case_log.py, 9] 测试用例：test_user_login_password_wrong
+[2019-09-16 18:02:14] INFO [case_log: case_log.py, 10] url：http://hm.xuyon.com/user/login
+[2019-09-16 18:02:14] INFO [case_log: case_log.py, 11] headers：{'Content-Type': 'application/json'}
+[2019-09-16 18:02:14] INFO [case_log: case_log.py, 12] 请求数据：{"userName": "xuyongjie", "password": "12345678"}
+[2019-09-16 18:02:14] INFO [case_log: case_log.py, 13] 期望结果：{'message': '密码错误', 'code': 1}
+[2019-09-16 18:02:14] INFO [case_log: case_log.py, 14] 实际状态码：200
+[2019-09-16 18:02:14] INFO [case_log: case_log.py, 15] 实际结果：{"code":1,"message":"密码错误"}
+[2019-09-16 18:02:15] INFO [send_mail: send_email.py, 34] 邮件发送完成
